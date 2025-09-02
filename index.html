@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPB - Música Popular Brasileira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Música Popular Brasileira</h1>
+            <p>Celebrando a riqueza e diversidade da nossa cultura musical</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#playlist">Playlist</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="destaque">
+            <h2>Destaque da Semana</h2>
+            <div class="destaque-artista">
+                <img src="https://placehold.co/400x300/006400/FFFFFF?text=Jorge+Ben+Jor" alt="Jorge Ben Jor">
+                <div class="destaque-info">
+                    <h3>Jorge Ben Jor</h3>
+                    <p>Conhecido por sua mistura de samba, rock, funk e ritmos africanos, Jorge Ben Jor é um dos nomes mais originais da MPB. Suas canções como "Mas Que Nada", "País Tropical" e "Chove Chuva" se tornaram hinos da música brasileira.</p>
+                    <button class="btn-saiba-mais" data-artista="jorge-ben-jor">Saiba mais</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="artistas">
+            <h2>Grandes Nomes da MPB</h2>
+            <div class="filtro-artistas">
+                <input type="text" id="busca-artista" placeholder="Buscar artista...">
+            </div>
+            <div class="grid-artistas">
+                <div class="artista-card" data-artista="jorge-ben-jor">
+                    <img src="https://placehold.co/200x200/006400/FFFFFF?text=Jorge+Ben+Jor" alt="Jorge Ben Jor">
+                    <h3>Jorge Ben Jor</h3>
+                </div>
+                <div class="artista-card" data-artista="cazuza">
+                    <img src="https://placehold.co/200x200/000080/FFFFFF?text=Cazuza" alt="Cazuza">
+                    <h3>Cazuza</h3>
+                </div>
+                <div class="artista-card" data-artista="ney-matogrosso">
+                    <img src="https://placehold.co/200x200/8B0000/FFFFFF?text=Ney+Matogrosso" alt="Ney Matogrosso">
+                    <h3>Ney Matogrosso</h3>
+                </div>
+                <div class="artista-card" data-artista="cassia-eller">
+                    <img src="https://placehold.co/200x200/4B0082/FFFFFF?text=Cassia+Eller" alt="Cássia Eller">
+                    <h3>Cássia Eller</h3>
+                </div>
+                <div class="artista-card" data-artista="gilberto-gil">
+                    <img src="https://placehold.co/200x200/FF8C00/FFFFFF?text=Gilberto+Gil" alt="Gilberto Gil">
+                    <h3>Gilberto Gil</h3>
+                </div>
+                <div class="artista-card" data-artista="djavan">
+                    <img src="https://placehold.co/200x200/9932CC/FFFFFF?text=Djavan" alt="Djavan">
+                    <h3>Djavan</h3>
+                </div>
+                <div class="artista-card" data-artista="adoniran-barbosa">
+                    <img src="https://placehold.co/200x200/2F4F4F/FFFFFF?text=Adoniran+Barbosa" alt="Adoniran Barbosa">
+                    <h3>Adoniran Barbosa</h3>
+                </div>
+                <div class="artista-card" data-artista="bezerra-da-silva">
+                    <img src="https://placehold.co/200x200/8B4513/FFFFFF?text=Bezerra+da+Silva" alt="Bezerra da Silva">
+                    <h3>Bezerra da Silva</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="modal-artista" class="modal">
+            <div class="modal-content">
+                <span class="fechar-modal">&times;</span>
+                <div id="info-artista"></div>
+            </div>
+        </section>
+
+        <section id="historia">
+            <h2>História da MPB</h2>
+            <div class="historia-content">
+                <p>A Música Popular Brasileira (MPB) surgiu em meados da década de 1960, após a bossa nova e com a influência do folclore musical brasileiro. O termo foi utilizado para designar uma nova tendência musical que seguia a linha da mistura de ritmos tradicionais brasileiros com influências estrangeiras, como o jazz e o rock.</p>
+                <p>Durante a ditadura militar, a MPB tornou-se um importante meio de expressão e protesto, com artistas como Chico Buarque, Geraldo Vandré e Gilberto Gil usando suas canções para criticar o regime. A Tropicália, movimento liderado por Gilberto Gil e Caetano Veloso, revolucionou a MPB ao incorporar elementos da cultura pop internacional e da psicodelia.</p>
+                <p>Nos anos 70 e 80, a MPB diversificou-se ainda mais, com artistas como Djavan, João Bosco e Ivan Lins trazendo novas influências do jazz e da soul music, enquanto outros como Elis Regina e Milton Nascimento consolidavam-se como grandes intérpretes.</p>
+            </div>
+        </section>
+
+        <section id="playlist">
+            <h2>Playlist Essencial</h2>
+            <div class="playlist-container">
+                <div class="musica">
+                    <h4>Mas Que Nada - Jorge Ben Jor</h4>
+                    <audio controls>
+                        <source src="#" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+                <div class="musica">
+                    <h4>Exagerado - Cazuza</h4>
+                    <audio controls>
+                        <source src="#" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+                <div class="musica">
+                    <h4>Homem com H - Ney Matogrosso</h4>
+                    <audio controls>
+                        <source src="#" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+                <div class="musica">
+                    <h4>Malandragem - Cássia Eller</h4>
+                    <audio controls>
+                        <source src="#" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Site dedicado à Música Popular Brasileira - 2023</p>
+            <p>Desenvolvido com ♥ para amantes da boa música</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
